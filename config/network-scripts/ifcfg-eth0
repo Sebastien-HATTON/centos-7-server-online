@@ -1,0 +1,8 @@
+# /etc/sysconfig/network-scripts/ifcfg-eth0
+DEVICE=eth0
+TYPE=Ethernet
+ONBOOT=yes
+BOOTPROTO=static
+IPADDR=163.172.220.174
+NETMASK=255.255.255.0
+
