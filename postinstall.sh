@@ -114,6 +114,15 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Activer SELinux en mode renforcé
+echo "::"
+echo -e ":: Activer SELinux en mode renforcé... \c"
+sleep $DELAY
+sed -i -e 's/SELINUX=disabled/SELINUX=enforcing/g' /etc/selinux/config
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0
