@@ -96,6 +96,15 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Quelques options pratiques pour Vim
+echo "::"
+echo -e ":: Configuration de Vim... \c"
+sleep $DELAY
+cat $CWD/config/vim/vimrc > /etc/vimrc
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0
