@@ -133,6 +133,15 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Activer le dépôt [cr] avec une priorité de 1
+echo "::"
+echo -e ":: Configuration du dépôt de paquets CR... \c"
+sleep $DELAY
+cat $CWD/config/yum/CentOS-CR.repo > /etc/yum.repos.d/CentOS-CR.repo
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0

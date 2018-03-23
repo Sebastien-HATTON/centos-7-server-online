@@ -1,10 +1,6 @@
 TODO
 ====
 
-  * Configuration des dépôts de base pour Yum
-
-  * Configuration du dépôt CR pour Yum
-
   * Installation du plug-in Yum-Priorities
 
   * Configuration du dépôt EPEL pour Yum
