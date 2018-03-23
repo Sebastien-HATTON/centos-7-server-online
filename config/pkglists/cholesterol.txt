@@ -2,4 +2,3 @@
 chrony
 firewalld
 NetworkManager-libnm
-postfix
