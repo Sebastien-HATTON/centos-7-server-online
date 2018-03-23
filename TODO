@@ -1,0 +1,37 @@
+TODO
+====
+
+  * Activer la gestion des Delta RPM
+
+  * Mise à jour initiale
+
+  * Désactivation de l'IPv6
+
+  * Personnalisation du shell Bash
+
+  * Quelques options pratiques pour Vim
+
+  * Configuration des dépôts de base pour Yum
+
+  * Configuration du dépôt CR pour Yum
+
+  * Installation du plug-in Yum-Priorities
+
+  * Configuration du dépôt EPEL pour Yum
+
+  * Installation des outils système Linux
+
+  * Modèles de fichiers pour la configuration réseau
+
+  * Modèle de pare-feu
+
+  * Désactivation de l'IPv6
+
+  * Client NTP
+
+  * SELinux en mode renforcé
+
+  * Documentation détaillée
+
+  * Supprimer les paquets inutiles
+
