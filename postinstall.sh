@@ -78,6 +78,24 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Personnalisation du shell Bash pour root
+echo "::"
+echo -e ":: Configuration du shell Bash pour l'administrateur... \c"
+sleep $DELAY
+cat $CWD/config/bash/bashrc-root > /root/.bashrc 
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
+# Personnalisation du shell Bash pour les utilisateurs
+echo "::"
+echo -e ":: Configuration du shell Bash pour les utilisateurs... \c"
+sleep $DELAY
+cat $CWD/config/bash/bashrc-users > /etc/skel/.bashrc
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0

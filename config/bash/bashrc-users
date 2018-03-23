@@ -1,0 +1,33 @@
+# ~/.bashrc
+
+# Prendre en compte la configuration globale
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi
+ 
+# On utilise l'anglais de préférence
+LANG=en_US.UTF8
+export LANG
+
+# Quelques alias pratiques
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ll='ls -al'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias vi='vim'
+
+# Invite de commandes pour les utilisateurs
+VERT='\[\033[0;32m\]'
+BLANC='\[\033[1;37m\]'
+GRIS='\[\033[0;m\]'
+PS1="$VERT[$BLANC\u$GRIS@$BLANC\h$GRIS:$BLANC\W$VERT] \$ $GRIS"
+
+# Vim est notre éditeur préféré
+EDITOR=vim
+VISUAL=$EDITOR
+export EDITOR VISUAL
+
+# Git
+unset SSH_ASKPASS
