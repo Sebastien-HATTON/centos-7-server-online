@@ -165,6 +165,15 @@ if ! rpm -q epel-release 2>&1 > /dev/null ; then
   echo
 fi
 
+# Installer les outils Linux listés dans config/pkglists/outils-linux.txt
+echo "::"
+echo -e ":: Installation des outils système Linux... \c"
+PAQUETS=$(egrep -v '(^\#)|(^\s+$)' $CWD/config/pkglists/outils-linux.txt)
+yum -y install $PAQUETS >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0
