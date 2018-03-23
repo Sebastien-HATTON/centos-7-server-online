@@ -1,0 +1,5 @@
+# Paquets inutiles
+chrony
+firewalld
+NetworkManager-libnm
+postfix
