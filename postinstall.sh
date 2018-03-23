@@ -152,6 +152,19 @@ if ! rpm -q yum-plugin-priorities 2>&1 > /dev/null ; then
   echo
 fi
 
+# Activer le dépôt [epel] avec une priorité de 10
+if ! rpm -q epel-release 2>&1 > /dev/null ; then
+  echo "::"
+  echo -e ":: Configuration du dépôt de paquets EPEL... \c"
+  rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 >> $LOG 2>&1
+  yum -y install epel-release >> $LOG 2>&1
+  cat $CWD/config/yum/epel.repo > /etc/yum.repos.d/epel.repo
+  cat $CWD/config/yum/epel-testing.repo > /etc/yum.repos.d/epel-testing.repo
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
 echo
 
 exit 0
