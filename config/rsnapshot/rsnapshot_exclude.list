@@ -1,0 +1,64 @@
+# Files and directories to exclude from backup
+
+# Various Hidden directories
+# .cache
+# .config
+# .git
+# .gvfs
+# .local
+# .mozilla
+# .recoll
+# .wine
+
+# Slackware packages
+# *.txz
+
+# Archives
+# *.tar.gz
+# *.tar.bz2
+# *.tgz
+# *.rar
+# *.RAR
+# *.zip
+# *.ZIP
+
+# Wine executables
+# *.exe
+# *.EXE
+
+# Image files
+# *.iso
+# *.ISO
+# *.vdi
+# *.qcow2
+
+# Audio
+# *.ogg
+# *.OGG
+# *.mp3
+# *.MP3
+# *.flac
+# *.FLAC
+# *.wav
+# *.WAV
+# *.wma
+# *.WMA
+
+# Video
+# *.avi
+# *.AVI
+# *.flv
+# *.FLV
+# *.mp4
+# *.MP4
+# *.mkv
+# *.MKV
+# *.mov
+# *.MOV
+# *.mpg
+# *.MPG
+# *.avi
+# *.AVI
+# *.wmv
+# *.WMV
+
