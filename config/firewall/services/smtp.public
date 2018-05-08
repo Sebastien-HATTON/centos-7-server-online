@@ -1,0 +1,2 @@
+# SMTP 
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 25 -j ACCEPT
