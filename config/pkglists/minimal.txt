@@ -1,4 +1,3 @@
-# CentOS 7 installation minimale
 acl
 aic94xx-firmware
 alsa-firmware
@@ -35,7 +34,10 @@ dbus-glib
 dbus-libs
 dbus-python
 device-mapper
+device-mapper-event
+device-mapper-event-libs
 device-mapper-libs
+device-mapper-persistent-data
 dhclient
 dhcp-common
 dhcp-libs
@@ -130,6 +132,7 @@ kpartx
 krb5-libs
 less
 libacl
+libaio
 libassuan
 libattr
 libblkid
@@ -181,8 +184,12 @@ libverto
 libxml2
 linux-firmware
 logrotate
+lshw
 lsscsi
 lua
+lvm2
+lvm2-libs
+lz4
 lzo
 make
 man-db
@@ -196,7 +203,6 @@ NetworkManager
 NetworkManager-libnm
 NetworkManager-team
 NetworkManager-tui
-NetworkManager-wifi
 newt
 newt-python
 nspr
@@ -265,6 +271,8 @@ sed
 selinux-policy
 selinux-policy-targeted
 setup
+sg3_utils
+sg3_utils-libs
 shadow-utils
 shared-mime-info
 slang
