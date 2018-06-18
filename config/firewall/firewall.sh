@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# firewall-dedibox.sh
+# firewall.sh
 
 IPT=/usr/sbin/iptables
 SERVICE=/usr/sbin/service
