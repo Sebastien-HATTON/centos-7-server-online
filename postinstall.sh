@@ -152,6 +152,15 @@ if ! rpm -q yum-plugin-priorities 2>&1 > /dev/null ; then
   echo
 fi
 
+# Activer le dépôt [lynis] avec une priorité de 5
+echo "::"
+echo -e ":: Configuration du dépôt de paquets Lynis... \c"
+sleep $DELAY
+cat $CWD/config/yum/lynis.repo > /etc/yum.repos.d/lynis.repo
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 # Activer le dépôt [epel] avec une priorité de 10
 if ! rpm -q epel-release 2>&1 > /dev/null ; then
   echo "::"

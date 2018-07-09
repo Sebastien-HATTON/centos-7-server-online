@@ -11,6 +11,7 @@ iptables-services
 lftp
 links
 lsof
+lynis
 man-pages
 man-pages-fr
 man-pages-overrides
