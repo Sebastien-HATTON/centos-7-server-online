@@ -1,0 +1,2 @@
+# IMAPS 
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 993 -j ACCEPT

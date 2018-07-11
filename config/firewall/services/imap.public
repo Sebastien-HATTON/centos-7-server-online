@@ -1,0 +1,2 @@
+# IMAP 
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 143 -j ACCEPT

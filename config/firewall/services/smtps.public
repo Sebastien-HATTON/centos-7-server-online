@@ -1,0 +1,2 @@
+# SMTPS
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 465 -j ACCEPT
