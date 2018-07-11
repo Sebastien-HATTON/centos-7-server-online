@@ -1,0 +1,2 @@
+# Xibo 
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 9505 -j ACCEPT
