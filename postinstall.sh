@@ -174,6 +174,18 @@ if ! rpm -q epel-release 2>&1 > /dev/null ; then
   echo
 fi
 
+# Activer le dépôt [nux-dextop] avec une priorité de 10
+if ! rpm -q nux-dextop-release 2>&1 > /dev/null ; then
+  echo "::"
+  echo -e ":: Configuration du dépôt de paquets Nux-Dextop... \c"
+  yum -y localinstall $CWD/config/yum/nux-dextop-release-*.rpm >> $LOG 2>&1
+  rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-nux.ro >> $LOG 2>&1
+  cat $CWD/config/yum/nux-dextop.repo > /etc/yum.repos.d/nux-dextop.repo
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
 # Installer les outils Linux listés dans config/pkglists/outils-linux.txt
 echo "::"
 echo -e ":: Installation des outils système Linux... \c"
