@@ -1,0 +1,2 @@
+# XMPP
+$IPT -A INPUT -p tcp -i $IFACE_INET --dport 5222 -j ACCEPT
