@@ -3,6 +3,7 @@
 # firewall.sh
 
 IPT=/usr/sbin/iptables
+MOD=/usr/sbin/modprobe
 SERVICE=/usr/sbin/service
 
 # Internet
